@@ -4,7 +4,8 @@ import './loadmore.css'
 const LoadMore = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
+    const [disabledButton,setDisabledButton] = useState(false)
 
 
     const fetchProducts = async () => {
@@ -31,6 +32,11 @@ const LoadMore = () => {
         fetchProducts()
     }, [count])
 
+    useEffect(() => {
+        if(products && products.length === 100) setDisabledButton(true)
+    },[products])
+
+
     if (loading) {
         return <div>Products Loading...</div>
     }
@@ -47,7 +53,10 @@ const LoadMore = () => {
                 )) : null }
             </div>
             <div className='button-container'>
-                <button onClick={() => setCount(count + 1)}>Load More Products</button>
+                <button disabled={disabledButton} onClick={() => setCount(count + 1)}>Load More Products</button>
+                {
+                    disabledButton ? <p>You have reached to 100 Products..</p> : null
+                }
             </div>
         </div>
     )

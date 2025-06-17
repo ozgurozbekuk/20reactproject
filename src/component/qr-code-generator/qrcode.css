@@ -1,0 +1,8 @@
+.qr-cod-container {
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
