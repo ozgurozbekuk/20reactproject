@@ -50,6 +50,15 @@ const ScrollIndicator = ({ url }) => {
 
     console.log(data, scrollPercentage);
 
+    if(errorMessage) {
+        return <p>Error! {errorMessage}</p>
+    }
+
+    if(loading){
+        return <div>Loading Data please wait..</div>
+    }
+
+
 
     return (
         <div>

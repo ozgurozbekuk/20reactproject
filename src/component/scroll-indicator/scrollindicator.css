@@ -16,7 +16,11 @@
 
 .current-progress-bar { 
     height: 10px;
-    background: #4482ec;
+    background: #ec4468;
     width: 0%;
     border-radius: 50%;
+}
+
+.data-container {
+    margin-top: 100px;
 }
