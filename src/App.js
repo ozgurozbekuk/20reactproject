@@ -13,6 +13,7 @@ import ScrollIndicator from './component/scroll-indicator/ScrollIndicator.jsx';
 import TabTest from './component/custom-tabs/TabTest.jsx';
 import ModalTest from './component/custom-modal-popup/ModalTest.jsx';
 import ProfileFinder from './component/github-profile-finder/ProfileFinder.jsx';
+import SearchAutocomplete from './component/search-autocomplete/SearchAutocomplete.jsx';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
         {/* <TabTest/> */}
         {/* <ModalTest/> */}
-      <ProfileFinder/>
+      {/* <ProfileFinder/> */}
+      <SearchAutocomplete/>
     </div>
   );
 }
