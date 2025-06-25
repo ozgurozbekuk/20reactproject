@@ -14,6 +14,7 @@ import TabTest from './component/custom-tabs/TabTest.jsx';
 import ModalTest from './component/custom-modal-popup/ModalTest.jsx';
 import ProfileFinder from './component/github-profile-finder/ProfileFinder.jsx';
 import SearchAutocomplete from './component/search-autocomplete/SearchAutocomplete.jsx';
+import Tictactoe from './component/tic-tac-toe/Tictactoe.jsx';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
         {/* <TabTest/> */}
         {/* <ModalTest/> */}
       {/* <ProfileFinder/> */}
-      <SearchAutocomplete/>
+      {/* <SearchAutocomplete/> */}
+      <Tictactoe />
     </div>
   );
 }
