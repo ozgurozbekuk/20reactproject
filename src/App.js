@@ -20,6 +20,8 @@ import FeatureFlags from './component/feature-flags/FeatureFlags.jsx';
 import UseFetchHookTest from './component/use-fetch/UseFetchHookTest.jsx';
 import UseOutsideTest from './component/use-outside-click/UseOutsideTest.jsx';
 import UseWindowResizeTest from './component/use-window-resize/UseWindowResizeTest.jsx';
+import ScrollTopAndBottom from './component/scroll-top-and-bottom/ScrollTopAndBottom.jsx';
+import SrollToSection from './component/scroll-top-and-bottom/SrollToSection.jsx';
 
 function App() {
   return (
@@ -45,7 +47,9 @@ function App() {
       </FeatureFlagGlobalState> */}
       {/* <UseFetchHookTest/> */}
       {/* <UseOutsideTest/> */}
-      <UseWindowResizeTest/>
+      {/* <UseWindowResizeTest/> */}
+      {/* <ScrollTopAndBottom/> */}
+      <SrollToSection/>
     </div>
   );
 }
